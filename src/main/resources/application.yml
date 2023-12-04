@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: ${MONGODB_DATABASE_URL:mongodb://localhost:27017/ProyectoNoSQLConcurrente}
+      uri: mongodb://localhost:27017/mongodb}
       auto-index-creation: true
   mvc:
     format:
@@ -13,3 +13,5 @@ spring:
       lifecycle-management: start-only
 springdoc:
   pathsToMatch: /api/**
+server:
+  port: 8080
