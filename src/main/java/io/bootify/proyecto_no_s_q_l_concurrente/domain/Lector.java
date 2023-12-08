@@ -7,7 +7,7 @@ import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document("lectors")
+@Document("lectores")
 @Getter
 @Setter
 public class Lector extends Biblioteca {

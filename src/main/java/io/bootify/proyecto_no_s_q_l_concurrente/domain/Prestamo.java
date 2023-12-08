@@ -7,10 +7,19 @@ import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document("prestamoes")
+@Document("prestamos")
 @Getter
 @Setter
 public class Prestamo extends Biblioteca {
+
+    /*@NotNull
+    private Libro libro;
+
+    @NotNull
+    private Lector lector;
+
+    @NotNull
+    private Bibliotecario bibliotecario;*/
 
     @NotNull
     private LocalDate fechaPrestamo;

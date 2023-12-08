@@ -20,14 +20,19 @@
                             <th scope="col">[[#{prestamo.id.label}]]</th>
                             <th scope="col">[[#{prestamo.fechaPrestamo.label}]]</th>
                             <th scope="col">[[#{prestamo.fechaDevolucion.label}]]</th>
-                            <th><!-- --></th>
-                        </tr>
+                           <!-- <th scope="col">[[#{prestamo.libro.label}]]</th>
+                            <th scope="col">[[#{prestamo.lector.label}]]</th>
+                            <th scope="col">[[#{prestamo.bibliotecario.label}]]</th>-->
+
                     </thead>
                     <tbody>
                         <tr th:each="prestamo : ${prestamoes}">
                             <td>[[${prestamo.id}]]</td>
                             <td>[[${prestamo.fechaPrestamo}]]</td>
                             <td>[[${prestamo.fechaDevolucion}]]</td>
+                            <!--<td>[[${prestamo.libro}]]</td>
+                            <td>[[${prestamo.lector}]]</td>
+                            <td>[[${prestamo.bibliotecario}]]</td>-->
                             <td>
                                 <div class="float-end text-nowrap">
                                     <a th:href="@{/prestamos/edit/{id}(id=${prestamo.id})}" class="btn btn-sm btn-secondary">[[#{prestamo.list.edit}]]</a>
