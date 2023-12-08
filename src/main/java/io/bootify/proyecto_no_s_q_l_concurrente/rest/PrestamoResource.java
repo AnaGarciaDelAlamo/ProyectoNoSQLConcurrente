@@ -47,7 +47,7 @@ public class PrestamoResource {
 
     @PutMapping("/{id}")
     public ResponseEntity<Long> updatePrestamo(@PathVariable(name = "id") final Long id,
-            @RequestBody @Valid final PrestamoDTO prestamoDTO) {
+                                               @RequestBody @Valid final PrestamoDTO prestamoDTO) {
         prestamoService.update(id, prestamoDTO);
         return ResponseEntity.ok(id);
     }

@@ -12,12 +12,6 @@ public class PrestamoDTO {
 
     private Long id;
 
-   /* private Long libro;
-
-    private Long lector;
-
-    private Long bibliotecario;*/
-
     @NotNull
     private LocalDate fechaPrestamo;
 
